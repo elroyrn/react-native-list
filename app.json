@@ -1,0 +1,18 @@
+{
+  "expo": {
+    "scheme": "acme",
+    "web": {
+      "bundler": "metro"
+    },
+    "name": "listapp",
+    "slug": "listapp",
+    "extra": {
+      "eas": {
+        "projectId": "0f480442-c069-4511-b697-07cee510e7c9"
+      }
+    },
+    "android": {
+      "package": "com.elroyrn.listapp"
+    }
+  }
+}
