@@ -6,7 +6,7 @@ import CardVertical from "./home/nearby/CardVertical";
 import CardHorizontal from "./home/popular/CardHorizontal";
 
 // card details screen
-import Header from "./carddetails/header/Header";
+import { default as Header } from "./carddetails/header/Header";
 import { default as Tabs } from "./carddetails/tabs/Tabs";
 import { default as About } from "./carddetails/about/About";
 

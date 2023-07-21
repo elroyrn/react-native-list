@@ -3,7 +3,6 @@ import { View, Text, Image } from "react-native";
 
 import styles from "./header.style";
 import { icons, images } from "../../../constants";
-import { checkImageURL } from "../../../utils";
 
 const HeaderProfile = ({}) => {
   return (

@@ -1,7 +1,6 @@
 import { View, Text, TouchableOpacity, Image } from "react-native";
 
 import styles from "./popularjobcard.style";
-import { checkImageURL } from "../../../../utils";
 
 const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
   return (
@@ -9,7 +8,7 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
       <TouchableOpacity style={styles.logoContainer(selectedJob, item)}>
         <Image
           source={{
-            uri: "https://random.imagecdn.app/500/150",
+            uri: `https://robohash.org/${item.id}`,
           }}
           resizeMode="cover"
           style={styles.logoImage}
@@ -21,10 +20,15 @@ const PopularJobCard = ({ item, selectedJob, handleCardPress }) => {
           {item.name}
         </Text>
         <View style={styles.infoWrapper}>
-          <Text style={styles.publisher(selectedJob, item)}>{item?.username} - </Text>
-          <Text style={styles.location} numberOfLines={1}>
+          <Text numberOfLines={1}>
             {" "}
-            {item.email}
+            <Text style={styles.publisher(selectedJob, item)} numberOfLines={1}>
+              {item?.username} -{" "}
+            </Text>
+            <Text style={styles.location} numberOfLines={1}>
+              {" "}
+              {item.email}
+            </Text>
           </Text>
         </View>
       </View>

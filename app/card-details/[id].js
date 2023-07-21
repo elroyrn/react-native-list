@@ -55,7 +55,7 @@ const CardDetails = () => {
             <Text>No data available</Text>
           ) : (
             <View style={{ padding: SIZES.medium, paddingBottom: 100 }}>
-              <Header jobTitle={data.name} companyName={data.username} location={data.address.city} />
+              <Header id={data.id} jobTitle={data.name} companyName={data.username} location={data.address.city} />
 
               <Tabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
 

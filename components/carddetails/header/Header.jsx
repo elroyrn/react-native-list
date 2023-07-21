@@ -3,15 +3,14 @@ import { View, Text, Image } from "react-native";
 
 import styles from "./header.style";
 import { icons } from "../../../constants";
-import { checkImageURL } from "../../../utils";
 
-const Header = ({ jobTitle, companyName, location }) => {
+const Header = ({ id, jobTitle, companyName, location }) => {
   return (
     <View style={styles.container}>
       <View style={styles.logoBox}>
         <Image
           source={{
-            uri: "https://random.imagecdn.app/500/150",
+            uri: `https://robohash.org/${id}`,
           }}
           style={styles.logoImage}
         />
